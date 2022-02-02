@@ -52,6 +52,7 @@ class AdapterMockInjector: AdapterInjector {
     static var `default`: AdapterMockInjector {
         let mock = AdapterMockInjector()
         mock.saveAdapter(type: ImageFetcher.self, adapter: ImageFetcherMock(image: UIImage(named: "ImageExample")))
+        mock.saveAdapter(type: APIAdapter.self, adapter: APIURLSessionAdapter())
         return mock
     }
 

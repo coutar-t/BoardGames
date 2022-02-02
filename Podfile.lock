@@ -13,24 +13,30 @@ PODS:
   - OHHTTPStubs/Swift (9.1.0):
     - OHHTTPStubs/Default
   - SnapshotTesting (1.9.0)
+  - Sourcery (1.6.1):
+    - Sourcery/CLI-Only (= 1.6.1)
+  - Sourcery/CLI-Only (1.6.1)
   - Swinject (2.8.1)
 
 DEPENDENCIES:
   - OHHTTPStubs/Swift
   - SnapshotTesting
+  - Sourcery
   - Swinject
 
 SPEC REPOS:
   trunk:
     - OHHTTPStubs
     - SnapshotTesting
+    - Sourcery
     - Swinject
 
 SPEC CHECKSUMS:
   OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
   SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
+  Sourcery: f3759f803bd0739f74fc92a4341eed0473ce61ac
   Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
 
-PODFILE CHECKSUM: 939ae564ad60280474815978a92411985bed97ae
+PODFILE CHECKSUM: 16bef085cd6905508da47986b60388f8867b21e4
 
 COCOAPODS: 1.11.2

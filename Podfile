@@ -13,6 +13,7 @@ target 'BoardGameList' do
     inherit! :search_paths
     pod 'SnapshotTesting'
     pod 'OHHTTPStubs/Swift'
+    pod 'Sourcery'
   end
 
 end

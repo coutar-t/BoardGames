@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7815435627A8063B00423D71 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7815435527A8063A00423D71 /* SectionTitle.swift */; };
 		7815435827A8065F00423D71 /* TopGamesGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7815435727A8065F00423D71 /* TopGamesGameCell.swift */; };
+		78745B9B27AA7D4600F26BE5 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78745B9A27AA7D4600F26BE5 /* AutoMockable.generated.swift */; };
+		78745B9D27AA8A0D00F26BE5 /* test_topGamesViewWithLoadingImages_Games.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 78745B9C27AA8A0D00F26BE5 /* test_topGamesViewWithLoadingImages_Games.1.png */; };
 		78A771DC27A8708B0077F33C /* ImageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A771DB27A8708B0077F33C /* ImageFromUrl.swift */; };
 		78A771DF27A87FDC0077F33C /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A771DE27A87FDC0077F33C /* ImageFetcher.swift */; };
 		78A771E127A884AC0077F33C /* AdapterInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A771E027A884AC0077F33C /* AdapterInjector.swift */; };
@@ -49,6 +51,8 @@
 		4ACEDA86504C5D95CCBCD854 /* Pods_BoardGameList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoardGameList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7815435527A8063A00423D71 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 		7815435727A8065F00423D71 /* TopGamesGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesGameCell.swift; sourceTree = "<group>"; };
+		78745B9A27AA7D4600F26BE5 /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
+		78745B9C27AA8A0D00F26BE5 /* test_topGamesViewWithLoadingImages_Games.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_topGamesViewWithLoadingImages_Games.1.png; sourceTree = "<group>"; };
 		78A771DB27A8708B0077F33C /* ImageFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromUrl.swift; sourceTree = "<group>"; };
 		78A771DE27A87FDC0077F33C /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 		78A771E027A884AC0077F33C /* AdapterInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterInjector.swift; sourceTree = "<group>"; };
@@ -109,6 +113,14 @@
 				78A771DD27A87FC50077F33C /* ImageFromUrl */,
 			);
 			path = ViewHelpers;
+			sourceTree = "<group>";
+		};
+		78745B9927AA7D4600F26BE5 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				78745B9A27AA7D4600F26BE5 /* AutoMockable.generated.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		78A771DD27A87FC50077F33C /* ImageFromUrl */ = {
@@ -211,6 +223,7 @@
 		78D6F52327A6C70B006FB273 /* BoardGameListTests */ = {
 			isa = PBXGroup;
 			children = (
+				78745B9927AA7D4600F26BE5 /* Generated */,
 				78D6F53827A6CEB5006FB273 /* HTTPStubs */,
 				78D6F52C27A6C718006FB273 /* views */,
 				78D6F52B27A6C70F006FB273 /* BusinessLogic */,
@@ -255,6 +268,7 @@
 		78D6F53127A6CA4A006FB273 /* TopGamesViewTests */ = {
 			isa = PBXGroup;
 			children = (
+				78745B9C27AA8A0D00F26BE5 /* test_topGamesViewWithLoadingImages_Games.1.png */,
 				78D6F53427A6CAAA006FB273 /* test_topGamesView_Games.1.png */,
 				78D6F53227A6CA4A006FB273 /* test_topGamesView_loading.1.png */,
 			);
@@ -324,6 +338,7 @@
 			buildConfigurationList = 78D6F52827A6C70B006FB273 /* Build configuration list for PBXNativeTarget "BoardGameListTests" */;
 			buildPhases = (
 				BF158DE80F6800460BECAB20 /* [CP] Check Pods Manifest.lock */,
+				78745B9827AA748900F26BE5 /* Sourcery */,
 				78D6F51E27A6C70B006FB273 /* Sources */,
 				78D6F51F27A6C70B006FB273 /* Frameworks */,
 				78D6F52027A6C70B006FB273 /* Resources */,
@@ -394,6 +409,7 @@
 			files = (
 				78D6F53327A6CA4A006FB273 /* test_topGamesView_loading.1.png in Resources */,
 				78D6F53527A6CAAA006FB273 /* test_topGamesView_Games.1.png in Resources */,
+				78745B9D27AA8A0D00F26BE5 /* test_topGamesViewWithLoadingImages_Games.1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +432,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoardGameList/Pods-BoardGameList-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		78745B9827AA748900F26BE5 /* Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Sourcery;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/Sourcery/bin/sourcery\n";
 		};
 		8B4DC13F85027356E42B934F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -506,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78D6F53D27A708B0006FB273 /* SearchGamesViewModelTests.swift in Sources */,
+				78745B9B27AA7D4600F26BE5 /* AutoMockable.generated.swift in Sources */,
 				78D6F53727A6CE47006FB273 /* TopGamesViewModelTests.swift in Sources */,
 				78D6F53A27A6CED4006FB273 /* APIStubs.swift in Sources */,
 				78D6F52F27A6C74A006FB273 /* TopGamesViewTests.swift in Sources */,

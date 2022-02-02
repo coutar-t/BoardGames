@@ -52,6 +52,8 @@ class SearchGamesViewModelTests: XCTestCase {
     }
     
     func test_whenViewDidLoad_thenRefreshCategories() {
+        Adapters.injector = AdapterMockInjector.default
+
         let viewModel = SearchGamesViewModel()
         self.defaultMockGetCategories()
         
@@ -75,16 +77,57 @@ class SearchGamesViewModelTests: XCTestCase {
     }
     
     func test_whenSearchByName_thenGamesAreReturned() {
-        let adapterInjector = AdapterMockInjector()
+        let apiMock = APIAdapterMock()
+        apiMock.getUrlCompletionClosure = { _, closure in
+            closure(.success(
+            """
+            {
+            "games": [
+                {
+                    "id": "TAAifFP590",
+                    "name": "7 Wonders",
+                    "min_players": 2,
+                    "max_players": 4,
+                    "min_playtime": 60,
+                    "max_playtime": 90,
+                    "min_age": 10,
+                    "description": "description",
+                    "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324760985.jpg",
+                    "average_user_rating": 4.066092779896466
+                }
+            ],
+            "count": 131368
+            }
+            """.data(using: .utf8)!))
+        }
+        let adapterInjector = AdapterMockInjector.default
+        adapterInjector.saveAdapter(type: APIAdapter.self, adapter: apiMock)
         Adapters.injector = adapterInjector
 
         let viewModel = SearchGamesViewModel()
 
-        viewModel.name = "7 Wonders"
+        viewModel.searchName = "7 Wonders"
         viewModel.search()
 
+        XCTAssertTrue(apiMock.getUrlCompletionCalledOnlyAndOnce)
+        XCTAssertEqual(apiMock.getUrlCompletionReceivedArguments?.url.absoluteString, "https://api.boardgameatlas.com/api/search?name=7%20Wonders&fuzzy_match=true&client_id=5livxIP9K0")
 
+        let updateExpectations = expectation(description: "wait for Games to be updated")
+        viewModel.$games
+            .sink { games in
+                XCTAssertEqual(games, [SearchGameGameViewData(id: "TAAifFP590", name: "7 Wonders")])
+                XCTAssertFalse(viewModel.loading)
+                updateExpectations.fulfill()
+            }.store(in: &cancellables)
 
+        wait(for: [updateExpectations], timeout: 10)
+    }
+}
+
+extension SearchGameGameViewData: Equatable {
+    public static func == (lhs: SearchGameGameViewData, rhs: SearchGameGameViewData) -> Bool {
+        return lhs.id == rhs.id &&
+        lhs.name == rhs.name
 
     }
 }

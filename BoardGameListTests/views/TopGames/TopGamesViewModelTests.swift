@@ -15,6 +15,7 @@ class TopGamesViewModelTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
+        Adapters.injector = AdapterMockInjector.default
         cancellables = []
     }
     

@@ -1,0 +1,6 @@
+sources:
+  - ./BoardGameList
+templates:
+  - ./SourceryTemplates
+output:
+  ./BoardGameListTests/Generated

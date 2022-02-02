@@ -7,27 +7,28 @@
 
 import Foundation
 
-protocol SearchGamesViewModelProtocol: ObservableObject {
-//    var games: [TopGamesGameViewData] { get }
-    var availableCategories: [CategoryViewData] { get }
-    var loading: Bool { get }
-//    var searchName: String { get }
+class SearchGamesViewModelProtocol: ObservableObject {
+    @Published var games: [SearchGameGameViewData] = []
+    @Published var availableCategories: [CategoryViewData] = []
+    @Published var loading: Bool = false
+    @Published var searchName: String = ""
 //    var searchCategories: [CategoryViewData] { get }
 //    var minPlayer:
     
-    func viewDidLoad()
+    func viewDidLoad() {}
+    func search() {}
+    fileprivate init() {}
 }
 
 class SearchGamesViewModel: SearchGamesViewModelProtocol {
-    @Published var loading: Bool = false
-    @Published var availableCategories: [CategoryViewData] = []
     private var gameListAPI: GameListAPIWrapperProtocol
     
     init(gameListAPI: GameListAPIWrapperProtocol = GameListAPIWrapper()) {
         self.gameListAPI = gameListAPI
+        super.init()
     }
 
-    func viewDidLoad() {
+    override func viewDidLoad() {
         loading = true
         self.gameListAPI.getCategories { result in
             self.loading = false
@@ -38,6 +39,21 @@ class SearchGamesViewModel: SearchGamesViewModelProtocol {
             }
         }
     }
+
+    override func search() {
+        self.gameListAPI.getSearchGames(name: searchName) { result in
+            switch result {
+            case .success(let games):
+                self.games = games.compactMap({ SearchGameGameViewData(id: $0.id, name: $0.name) })
+            case .failure(let error): break
+            }
+        }
+    }
+}
+
+struct SearchGameGameViewData {
+    var id: String
+    var name: String
 }
 
 struct CategoryViewData {

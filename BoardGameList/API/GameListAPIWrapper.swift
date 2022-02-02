@@ -10,6 +10,7 @@ import Foundation
 protocol GameListAPIWrapperProtocol {
     func getTopGames(_ completion: @escaping (Result<[APIGame], Error>) -> Void)
     func getCategories(_ completion: @escaping (Result<[APICategory], Error>) -> Void)
+    func getSearchGames(name: String, _ completion: @escaping (Result<[APIGame], Error>) -> Void)
 }
 
 class GameListAPIWrapper: GameListAPIWrapperProtocol {
@@ -26,6 +27,27 @@ class GameListAPIWrapper: GameListAPIWrapperProtocol {
             return completion(.failure(APIError.malformedUrl))
         }
         
+        apiAdapter.get(url: url) { result in
+            switch result {
+            case .failure(let error): completion(.failure(error))
+            case .success(let data):
+                do {
+                    let decoder = JSONDecoder()
+                    decoder.keyDecodingStrategy = .convertFromSnakeCase
+                    let result = try decoder.decode(APIGameList.self, from: data)
+                    completion(.success(result.games))
+                } catch let error {
+                    completion(.failure(error))
+                }
+            }
+        }
+    }
+
+    func getSearchGames(name: String, _ completion: @escaping (Result<[APIGame], Error>) -> Void) {
+        guard let url = URL(string: "https://api.boardgameatlas.com/api/search?name=\(name.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)&fuzzy_match=true&client_id=\(clientId)") else {
+            return completion(.failure(APIError.malformedUrl))
+        }
+
         apiAdapter.get(url: url) { result in
             switch result {
             case .failure(let error): completion(.failure(error))
