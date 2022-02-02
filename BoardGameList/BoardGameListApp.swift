@@ -11,7 +11,14 @@ import SwiftUI
 struct BoardGameListApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
+    }
+    
+    init() {
+        UINavigationBar.appearance().backgroundColor = UIColor(red: 35.0/255.0, green: 37.0/255.0, blue: 35.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().tintColor = .white
     }
 }
