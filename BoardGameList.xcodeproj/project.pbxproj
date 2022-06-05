@@ -7,18 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7815435627A8063B00423D71 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7815435527A8063A00423D71 /* SectionTitle.swift */; };
+		7815435827A8065F00423D71 /* TopGamesGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7815435727A8065F00423D71 /* TopGamesGameCell.swift */; };
+		78A771DC27A8708B0077F33C /* ImageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A771DB27A8708B0077F33C /* ImageFromUrl.swift */; };
+		78A771DF27A87FDC0077F33C /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A771DE27A87FDC0077F33C /* ImageFetcher.swift */; };
+		78A771E127A884AC0077F33C /* AdapterInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A771E027A884AC0077F33C /* AdapterInjector.swift */; };
 		78D6F4ED27A5DAAC006FB273 /* BoardGameListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F4EC27A5DAAC006FB273 /* BoardGameListApp.swift */; };
-		78D6F4EF27A5DAAC006FB273 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F4EE27A5DAAC006FB273 /* ContentView.swift */; };
 		78D6F4F127A5DAAE006FB273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D6F4F027A5DAAE006FB273 /* Assets.xcassets */; };
 		78D6F4F427A5DAAE006FB273 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D6F4F327A5DAAE006FB273 /* Preview Assets.xcassets */; };
+		78D6F4FC27A5DACE006FB273 /* GameListAPIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F4FB27A5DACE006FB273 /* GameListAPIWrapper.swift */; };
+		78D6F4FF27A5DE62006FB273 /* APIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F4FE27A5DE62006FB273 /* APIAdapter.swift */; };
+		78D6F51227A5E0A5006FB273 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F51127A5E0A5006FB273 /* HomeView.swift */; };
+		78D6F51427A5E0B5006FB273 /* TopGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F51327A5E0B5006FB273 /* TopGamesView.swift */; };
+		78D6F51727A68EFC006FB273 /* TopGamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F51627A68EFC006FB273 /* TopGamesViewModel.swift */; };
+		78D6F51A27A6AE5B006FB273 /* SearchGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F51927A6AE5B006FB273 /* SearchGameView.swift */; };
+		78D6F51D27A6B237006FB273 /* SearchGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F51C27A6B237006FB273 /* SearchGameViewModel.swift */; };
+		78D6F52F27A6C74A006FB273 /* TopGamesViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F52E27A6C74A006FB273 /* TopGamesViewTests.swift */; };
+		78D6F53327A6CA4A006FB273 /* test_topGamesView_loading.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 78D6F53227A6CA4A006FB273 /* test_topGamesView_loading.1.png */; };
+		78D6F53527A6CAAA006FB273 /* test_topGamesView_Games.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 78D6F53427A6CAAA006FB273 /* test_topGamesView_Games.1.png */; };
+		78D6F53727A6CE47006FB273 /* TopGamesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F53627A6CE47006FB273 /* TopGamesViewModelTests.swift */; };
+		78D6F53A27A6CED4006FB273 /* APIStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F53927A6CED4006FB273 /* APIStubs.swift */; };
+		78D6F53D27A708B0006FB273 /* SearchGamesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6F53C27A708B0006FB273 /* SearchGamesViewModelTests.swift */; };
+		914AB62C67845D66A5A10B1F /* Pods_BoardGameList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACEDA86504C5D95CCBCD854 /* Pods_BoardGameList.framework */; };
+		DA0BCC36B77AE5391777B815 /* Pods_BoardGameListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB84C28C1911BB40F3FED12 /* Pods_BoardGameListTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		78D6F52627A6C70B006FB273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78D6F4E127A5DAAC006FB273 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78D6F4E827A5DAAC006FB273;
+			remoteInfo = BoardGameList;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0C7936288EC8044A005CB9E8 /* Pods-BoardGameListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGameListTests.debug.xcconfig"; path = "Target Support Files/Pods-BoardGameListTests/Pods-BoardGameListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E7441A3FC1B8FBA95974B6B /* Pods-BoardGameList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGameList.release.xcconfig"; path = "Target Support Files/Pods-BoardGameList/Pods-BoardGameList.release.xcconfig"; sourceTree = "<group>"; };
+		2AB84C28C1911BB40F3FED12 /* Pods_BoardGameListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoardGameListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ACEDA86504C5D95CCBCD854 /* Pods_BoardGameList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoardGameList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7815435527A8063A00423D71 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
+		7815435727A8065F00423D71 /* TopGamesGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesGameCell.swift; sourceTree = "<group>"; };
+		78A771DB27A8708B0077F33C /* ImageFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromUrl.swift; sourceTree = "<group>"; };
+		78A771DE27A87FDC0077F33C /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		78A771E027A884AC0077F33C /* AdapterInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterInjector.swift; sourceTree = "<group>"; };
 		78D6F4E927A5DAAC006FB273 /* BoardGameList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardGameList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D6F4EC27A5DAAC006FB273 /* BoardGameListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameListApp.swift; sourceTree = "<group>"; };
-		78D6F4EE27A5DAAC006FB273 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		78D6F4F027A5DAAE006FB273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78D6F4F327A5DAAE006FB273 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78D6F4FB27A5DACE006FB273 /* GameListAPIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListAPIWrapper.swift; sourceTree = "<group>"; };
+		78D6F4FE27A5DE62006FB273 /* APIAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAdapter.swift; sourceTree = "<group>"; };
+		78D6F51127A5E0A5006FB273 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		78D6F51327A5E0B5006FB273 /* TopGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesView.swift; sourceTree = "<group>"; };
+		78D6F51627A68EFC006FB273 /* TopGamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesViewModel.swift; sourceTree = "<group>"; };
+		78D6F51927A6AE5B006FB273 /* SearchGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGameView.swift; sourceTree = "<group>"; };
+		78D6F51C27A6B237006FB273 /* SearchGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGameViewModel.swift; sourceTree = "<group>"; };
+		78D6F52227A6C70B006FB273 /* BoardGameListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardGameListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D6F52E27A6C74A006FB273 /* TopGamesViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesViewTests.swift; sourceTree = "<group>"; };
+		78D6F53227A6CA4A006FB273 /* test_topGamesView_loading.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_topGamesView_loading.1.png; sourceTree = "<group>"; };
+		78D6F53427A6CAAA006FB273 /* test_topGamesView_Games.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_topGamesView_Games.1.png; sourceTree = "<group>"; };
+		78D6F53627A6CE47006FB273 /* TopGamesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesViewModelTests.swift; sourceTree = "<group>"; };
+		78D6F53927A6CED4006FB273 /* APIStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStubs.swift; sourceTree = "<group>"; };
+		78D6F53C27A708B0006FB273 /* SearchGamesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGamesViewModelTests.swift; sourceTree = "<group>"; };
+		8E4FF53E7633146C949965F1 /* Pods-BoardGameList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGameList.debug.xcconfig"; path = "Target Support Files/Pods-BoardGameList/Pods-BoardGameList.debug.xcconfig"; sourceTree = "<group>"; };
+		B841127A24BD0F03F71D48E8 /* Pods-BoardGameListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGameListTests.release.xcconfig"; path = "Target Support Files/Pods-BoardGameListTests/Pods-BoardGameListTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +79,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914AB62C67845D66A5A10B1F /* Pods_BoardGameList.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D6F51F27A6C70B006FB273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0BCC36B77AE5391777B815 /* Pods_BoardGameListTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7815435427A8062C00423D71 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				7815435527A8063A00423D71 /* SectionTitle.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		7815435927A8168500423D71 /* ViewHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				7815435427A8062C00423D71 /* ViewModifiers */,
+				78A771DD27A87FC50077F33C /* ImageFromUrl */,
+			);
+			path = ViewHelpers;
+			sourceTree = "<group>";
+		};
+		78A771DD27A87FC50077F33C /* ImageFromUrl */ = {
+			isa = PBXGroup;
+			children = (
+				78A771DB27A8708B0077F33C /* ImageFromUrl.swift */,
+				78A771DE27A87FDC0077F33C /* ImageFetcher.swift */,
+			);
+			path = ImageFromUrl;
+			sourceTree = "<group>";
+		};
 		78D6F4E027A5DAAC006FB273 = {
 			isa = PBXGroup;
 			children = (
 				78D6F4EB27A5DAAC006FB273 /* BoardGameList */,
+				78D6F52327A6C70B006FB273 /* BoardGameListTests */,
 				78D6F4EA27A5DAAC006FB273 /* Products */,
+				DF0FD6CC640FB1D6E039D3CB /* Pods */,
+				F1296B7135F2ED5B624FB732 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				78D6F4E927A5DAAC006FB273 /* BoardGameList.app */,
+				78D6F52227A6C70B006FB273 /* BoardGameListTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +143,11 @@
 		78D6F4EB27A5DAAC006FB273 /* BoardGameList */ = {
 			isa = PBXGroup;
 			children = (
+				7815435927A8168500423D71 /* ViewHelpers */,
+				78D6F51027A5E098006FB273 /* Views */,
+				78D6F4FD27A5DE5B006FB273 /* Adapters */,
+				78D6F4FA27A5DAB3006FB273 /* API */,
 				78D6F4EC27A5DAAC006FB273 /* BoardGameListApp.swift */,
-				78D6F4EE27A5DAAC006FB273 /* ContentView.swift */,
 				78D6F4F027A5DAAE006FB273 /* Assets.xcassets */,
 				78D6F4F227A5DAAE006FB273 /* Preview Content */,
 			);
@@ -67,6 +162,141 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		78D6F4FA27A5DAB3006FB273 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				78D6F4FB27A5DACE006FB273 /* GameListAPIWrapper.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		78D6F4FD27A5DE5B006FB273 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				78D6F4FE27A5DE62006FB273 /* APIAdapter.swift */,
+				78A771E027A884AC0077F33C /* AdapterInjector.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		78D6F51027A5E098006FB273 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				78D6F51827A6AE4E006FB273 /* SearchGames */,
+				78D6F51527A68EED006FB273 /* TopGames */,
+				78D6F51127A5E0A5006FB273 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		78D6F51527A68EED006FB273 /* TopGames */ = {
+			isa = PBXGroup;
+			children = (
+				78D6F51327A5E0B5006FB273 /* TopGamesView.swift */,
+				78D6F51627A68EFC006FB273 /* TopGamesViewModel.swift */,
+				7815435727A8065F00423D71 /* TopGamesGameCell.swift */,
+			);
+			path = TopGames;
+			sourceTree = "<group>";
+		};
+		78D6F51827A6AE4E006FB273 /* SearchGames */ = {
+			isa = PBXGroup;
+			children = (
+				78D6F51927A6AE5B006FB273 /* SearchGameView.swift */,
+				78D6F51C27A6B237006FB273 /* SearchGameViewModel.swift */,
+			);
+			path = SearchGames;
+			sourceTree = "<group>";
+		};
+		78D6F52327A6C70B006FB273 /* BoardGameListTests */ = {
+			isa = PBXGroup;
+			children = (
+				78D6F53827A6CEB5006FB273 /* HTTPStubs */,
+				78D6F52C27A6C718006FB273 /* views */,
+				78D6F52B27A6C70F006FB273 /* BusinessLogic */,
+			);
+			path = BoardGameListTests;
+			sourceTree = "<group>";
+		};
+		78D6F52B27A6C70F006FB273 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		78D6F52C27A6C718006FB273 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				78D6F53B27A70769006FB273 /* SearchGames */,
+				78D6F52D27A6C72C006FB273 /* TopGames */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		78D6F52D27A6C72C006FB273 /* TopGames */ = {
+			isa = PBXGroup;
+			children = (
+				78D6F53027A6CA4A006FB273 /* __Snapshots__ */,
+				78D6F52E27A6C74A006FB273 /* TopGamesViewTests.swift */,
+				78D6F53627A6CE47006FB273 /* TopGamesViewModelTests.swift */,
+			);
+			path = TopGames;
+			sourceTree = "<group>";
+		};
+		78D6F53027A6CA4A006FB273 /* __Snapshots__ */ = {
+			isa = PBXGroup;
+			children = (
+				78D6F53127A6CA4A006FB273 /* TopGamesViewTests */,
+			);
+			path = __Snapshots__;
+			sourceTree = "<group>";
+		};
+		78D6F53127A6CA4A006FB273 /* TopGamesViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				78D6F53427A6CAAA006FB273 /* test_topGamesView_Games.1.png */,
+				78D6F53227A6CA4A006FB273 /* test_topGamesView_loading.1.png */,
+			);
+			path = TopGamesViewTests;
+			sourceTree = "<group>";
+		};
+		78D6F53827A6CEB5006FB273 /* HTTPStubs */ = {
+			isa = PBXGroup;
+			children = (
+				78D6F53927A6CED4006FB273 /* APIStubs.swift */,
+			);
+			path = HTTPStubs;
+			sourceTree = "<group>";
+		};
+		78D6F53B27A70769006FB273 /* SearchGames */ = {
+			isa = PBXGroup;
+			children = (
+				78D6F53C27A708B0006FB273 /* SearchGamesViewModelTests.swift */,
+			);
+			path = SearchGames;
+			sourceTree = "<group>";
+		};
+		DF0FD6CC640FB1D6E039D3CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E4FF53E7633146C949965F1 /* Pods-BoardGameList.debug.xcconfig */,
+				0E7441A3FC1B8FBA95974B6B /* Pods-BoardGameList.release.xcconfig */,
+				0C7936288EC8044A005CB9E8 /* Pods-BoardGameListTests.debug.xcconfig */,
+				B841127A24BD0F03F71D48E8 /* Pods-BoardGameListTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1296B7135F2ED5B624FB732 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ACEDA86504C5D95CCBCD854 /* Pods_BoardGameList.framework */,
+				2AB84C28C1911BB40F3FED12 /* Pods_BoardGameListTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +304,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78D6F4F727A5DAAE006FB273 /* Build configuration list for PBXNativeTarget "BoardGameList" */;
 			buildPhases = (
+				8B4DC13F85027356E42B934F /* [CP] Check Pods Manifest.lock */,
 				78D6F4E527A5DAAC006FB273 /* Sources */,
 				78D6F4E627A5DAAC006FB273 /* Frameworks */,
 				78D6F4E727A5DAAC006FB273 /* Resources */,
+				023C71B325F9279EF6952783 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -86,6 +318,26 @@
 			productName = BoardGameList;
 			productReference = 78D6F4E927A5DAAC006FB273 /* BoardGameList.app */;
 			productType = "com.apple.product-type.application";
+		};
+		78D6F52127A6C70B006FB273 /* BoardGameListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78D6F52827A6C70B006FB273 /* Build configuration list for PBXNativeTarget "BoardGameListTests" */;
+			buildPhases = (
+				BF158DE80F6800460BECAB20 /* [CP] Check Pods Manifest.lock */,
+				78D6F51E27A6C70B006FB273 /* Sources */,
+				78D6F51F27A6C70B006FB273 /* Frameworks */,
+				78D6F52027A6C70B006FB273 /* Resources */,
+				BCE580903D2D7B7C64009434 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78D6F52727A6C70B006FB273 /* PBXTargetDependency */,
+			);
+			name = BoardGameListTests;
+			productName = BoardGameListTests;
+			productReference = 78D6F52227A6C70B006FB273 /* BoardGameListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +351,11 @@
 				TargetAttributes = {
 					78D6F4E827A5DAAC006FB273 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					78D6F52127A6C70B006FB273 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+						TestTargetID = 78D6F4E827A5DAAC006FB273;
 					};
 				};
 			};
@@ -116,6 +373,7 @@
 			projectRoot = "";
 			targets = (
 				78D6F4E827A5DAAC006FB273 /* BoardGameList */,
+				78D6F52127A6C70B006FB273 /* BoardGameListTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,19 +388,139 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		78D6F52027A6C70B006FB273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D6F53327A6CA4A006FB273 /* test_topGamesView_loading.1.png in Resources */,
+				78D6F53527A6CAAA006FB273 /* test_topGamesView_Games.1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		023C71B325F9279EF6952783 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoardGameList/Pods-BoardGameList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoardGameList/Pods-BoardGameList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoardGameList/Pods-BoardGameList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B4DC13F85027356E42B934F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoardGameList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCE580903D2D7B7C64009434 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoardGameListTests/Pods-BoardGameListTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoardGameListTests/Pods-BoardGameListTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoardGameListTests/Pods-BoardGameListTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF158DE80F6800460BECAB20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoardGameListTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78D6F4E527A5DAAC006FB273 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78D6F4EF27A5DAAC006FB273 /* ContentView.swift in Sources */,
+				78D6F51D27A6B237006FB273 /* SearchGameViewModel.swift in Sources */,
+				78D6F4FF27A5DE62006FB273 /* APIAdapter.swift in Sources */,
 				78D6F4ED27A5DAAC006FB273 /* BoardGameListApp.swift in Sources */,
+				78D6F51A27A6AE5B006FB273 /* SearchGameView.swift in Sources */,
+				78D6F51227A5E0A5006FB273 /* HomeView.swift in Sources */,
+				78A771DC27A8708B0077F33C /* ImageFromUrl.swift in Sources */,
+				7815435827A8065F00423D71 /* TopGamesGameCell.swift in Sources */,
+				7815435627A8063B00423D71 /* SectionTitle.swift in Sources */,
+				78A771E127A884AC0077F33C /* AdapterInjector.swift in Sources */,
+				78D6F51427A5E0B5006FB273 /* TopGamesView.swift in Sources */,
+				78A771DF27A87FDC0077F33C /* ImageFetcher.swift in Sources */,
+				78D6F51727A68EFC006FB273 /* TopGamesViewModel.swift in Sources */,
+				78D6F4FC27A5DACE006FB273 /* GameListAPIWrapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D6F51E27A6C70B006FB273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D6F53D27A708B0006FB273 /* SearchGamesViewModelTests.swift in Sources */,
+				78D6F53727A6CE47006FB273 /* TopGamesViewModelTests.swift in Sources */,
+				78D6F53A27A6CED4006FB273 /* APIStubs.swift in Sources */,
+				78D6F52F27A6C74A006FB273 /* TopGamesViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78D6F52727A6C70B006FB273 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78D6F4E827A5DAAC006FB273 /* BoardGameList */;
+			targetProxy = 78D6F52627A6C70B006FB273 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		78D6F4F527A5DAAE006FB273 /* Debug */ = {
@@ -263,6 +641,7 @@
 		};
 		78D6F4F827A5DAAE006FB273 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E4FF53E7633146C949965F1 /* Pods-BoardGameList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +671,7 @@
 		};
 		78D6F4F927A5DAAE006FB273 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E7441A3FC1B8FBA95974B6B /* Pods-BoardGameList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +699,57 @@
 			};
 			name = Release;
 		};
+		78D6F52927A6C70B006FB273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7936288EC8044A005CB9E8 /* Pods-BoardGameListTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4965NT4QX9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thibautc.BoardGameListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoardGameList.app/BoardGameList";
+			};
+			name = Debug;
+		};
+		78D6F52A27A6C70B006FB273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B841127A24BD0F03F71D48E8 /* Pods-BoardGameListTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4965NT4QX9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thibautc.BoardGameListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoardGameList.app/BoardGameList";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +767,15 @@
 			buildConfigurations = (
 				78D6F4F827A5DAAE006FB273 /* Debug */,
 				78D6F4F927A5DAAE006FB273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78D6F52827A6C70B006FB273 /* Build configuration list for PBXNativeTarget "BoardGameListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D6F52927A6C70B006FB273 /* Debug */,
+				78D6F52A27A6C70B006FB273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
